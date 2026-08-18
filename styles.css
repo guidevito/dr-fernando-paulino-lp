@@ -89,9 +89,9 @@ img {
 
 .brand img {
   width: 250px;
-  height: 72px;
+  height: 84px;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 65%;
   border-radius: 8px;
   filter: drop-shadow(0 12px 24px rgba(0,0,0,.25));
 }
@@ -279,6 +279,8 @@ h3 {
   border-radius: 20px;
   aspect-ratio: 2 / 3;
   min-height: 0;
+  padding: 20px;
+  background: #0a0d1b;
   background: var(--navy-2);
 }
 
@@ -289,6 +291,7 @@ h3 {
   object-fit: cover;
   object-position: center 18%;
   filter: saturate(1.05) contrast(1.04);
+  border-radius: 12px;
 }
 
 .portrait-hook {
@@ -757,6 +760,7 @@ h3 {
 
   .brand img {
     width: 190px;
+    height: 68px;
   }
 
   .nav-links {
@@ -839,7 +843,7 @@ h3 {
 
   .brand img {
     width: 172px;
-    height: 56px;
+    height: 62px;
   }
 
   .header-cta {
