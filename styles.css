@@ -157,9 +157,19 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(340px, .85fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 54px;
   align-items: center;
+}
+
+.hero-card {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.hero-copy {
+  width: min(760px, 100%);
+  margin: 0 auto;
 }
 
 .hero-kicker,
@@ -294,31 +304,51 @@ h3 {
   position: absolute;
   top: 28px;
   left: 24px;
-  width: min(52%, 300px);
-  padding: 14px 16px 16px;
+  width: min(47%, 310px);
+  padding: 8px 14px 12px;
   color: #07101f;
-  background: rgba(248, 244, 234, .9);
-  border-left: 5px solid #29c4ef;
-  border-radius: 4px 18px 18px 4px;
-  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+  background: transparent;
+  border-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: clamp(.98rem, 1.8vw, 1.35rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+
+.portrait-hook span,
+.portrait-hook strong {
+  display: block;
+}
+
+.portrait-hook span {
+  font-family: var(--sans);
+  font-size: 1.15em;
+  font-weight: 500;
+  line-height: 1.06;
+}
+
+.portrait-hook strong {
+  position: relative;
+  z-index: 1;
+  margin-top: 14px;
   font-family: var(--serif);
-  font-size: clamp(.95rem, 1.8vw, 1.25rem);
+  font-size: .98em;
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -.035em;
+  line-height: 1.08;
 }
 
 .portrait-hook::after {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 0;
   right: 0;
-  bottom: 7px;
-  height: 7px;
+  bottom: 11px;
+  height: 9px;
   z-index: -1;
-  background: rgba(41, 196, 239, .68);
+  background: rgba(41, 196, 239, .6);
   border-radius: 999px;
-  transform: rotate(-2deg);
+  transform: none;
 }
 
 .lawyer-badge {
@@ -808,10 +838,12 @@ h3 {
   .portrait-hook {
     top: 18px;
     left: 16px;
-    width: 66%;
-    padding: 11px 12px 13px;
-    font-size: .98rem;
+    width: 58%;
+    padding: 7px 8px 11px;
+    font-size: .92rem;
   }
+
+  .portrait-hook strong { margin-top: 11px; }
 
   .section {
     padding: 54px 0;
