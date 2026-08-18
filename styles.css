@@ -88,10 +88,11 @@ img {
 }
 
 .brand img {
-  width: 230px;
-  height: 70px;
-  object-fit: contain;
-  object-position: left center;
+  width: 250px;
+  height: 72px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 8px;
   filter: drop-shadow(0 12px 24px rgba(0,0,0,.25));
 }
 
@@ -616,7 +617,7 @@ h3 {
   }
 
   .brand img {
-    width: 172px;
+    width: 190px;
   }
 
   .nav-links {
@@ -693,8 +694,8 @@ h3 {
   }
 
   .brand img {
-    width: 142px;
-    height: 52px;
+    width: 172px;
+    height: 56px;
   }
 
   .header-cta {
