@@ -264,24 +264,21 @@ h3 {
 
 .hero-card {
   position: relative;
-  padding: 12px;
-  border: 1px solid rgba(215,173,72,.28);
-  border-radius: 28px;
-  background:
-    linear-gradient(160deg, rgba(255,255,255,.12), rgba(255,255,255,.02)),
-    rgba(13, 16, 33, .75);
-  box-shadow: var(--shadow);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .portrait-wrap {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 0;
   aspect-ratio: 1085 / 1450;
   min-height: 0;
-  padding: 28px;
-  background: #0a0d1b;
-  background: var(--navy-2);
+  padding: 0;
+  background: transparent;
 }
 
 .portrait-wrap img {
@@ -291,7 +288,7 @@ h3 {
   object-fit: cover;
   object-position: center 18%;
   filter: saturate(1.05) contrast(1.04);
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 .portrait-hook {
